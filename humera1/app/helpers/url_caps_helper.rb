@@ -1,0 +1,2 @@
+module UrlCapsHelper
+end

@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Url Caps</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @url_caps.each do |url_cap| %>
+      <tr>
+        <td><%= link_to 'Show', url_cap %></td>
+        <td><%= link_to 'Edit', edit_url_cap_path(url_cap) %></td>
+        <td><%= link_to 'Destroy', url_cap, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Url Cap', new_url_cap_path %>

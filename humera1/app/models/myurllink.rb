@@ -1,0 +1,2 @@
+class Myurllink < ApplicationRecord
+end

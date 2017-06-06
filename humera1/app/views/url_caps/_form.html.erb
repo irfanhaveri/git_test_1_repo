@@ -1,0 +1,17 @@
+<%= form_with(model: url_cap, local: true) do |form| %>
+  <% if url_cap.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(url_cap.errors.count, "error") %> prohibited this url_cap from being saved:</h2>
+
+      <ul>
+      <% url_cap.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
